@@ -4,3 +4,83 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: blueviolet;
+}
+
+.calculator {
+    width : 400px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.display {
+    text-align: right;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    height: 60px;
+}
+.memory {
+    text-align: right;
+    background-color: rgb(53, 52, 52);
+    color: lightgrey;
+    height: 30px;
+    font-size: 20px;
+    padding: 10px;
+}
+.screen {
+    border: 2px solid black;
+}
+.undo {
+    flex: 1 1 25%;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    padding: 10px;
+    height: 70px;
+}
+
+.clear {
+    background-color: brown;
+    flex: 1 1 50%;
+    font-weight: 600;
+}
+
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(53, 52, 52);
+    padding: 2px;
+    
+}
+
+.operator {
+    background-color: #789;
+    flex: 1 1 25%;
+}
+
+.decimal, .result, .number {
+    flex: 1 1 25%;
+}
+
+#zero {
+    flex: 1 1 50%;
+}
+
+.result {
+    background-color: #046;
+}
