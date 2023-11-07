@@ -52,6 +52,9 @@ decimalButton.addEventListener("click", function() {
 })
 
 undoButton.addEventListener("click", function() { 
+    if (displayDiv.textContent == "You fool?") {
+        return
+    }
     let displayArray = displayDiv.textContent.split("")
     displayArray.splice(displayArray.length - 1, 1)
     display = displayArray.join("")
@@ -72,7 +75,7 @@ numberButtons.forEach(button => {
     button.addEventListener("click", function() {
         if (displayControl) {
             display = 0
-            displayControl = 0  
+            displayControl = 0 
         }
         display += button.value
         display = Number(display)
